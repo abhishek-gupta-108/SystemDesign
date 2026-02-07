@@ -4,17 +4,16 @@ Phones have limited computational capacity. Remote Apis remove these constraints
 
 
 ### How Web Works?
-+------------------+                             +------------------+
-|      Client      |                             |      Server      |
-|    (Browser)     |                             |   (Web Server)   |
-+------------------+                             +------------------+
-         |                                                   |
-         | -------- HTTP GET /index.html (URI) ------------> |
-         |                                                   |
-         | <----------- HTML Response ---------------------- |
-         |                                                   |
+Browser (Client)<br>
+   |<br>
+   | ---- HTTP GET /home ----><br>
+   |<br>
+   | <---- 200 OK + HTML ----<br>
+   |<br>
+Web Server<br>
       https::\\google.com
 
+When a browser hits a URL, our browser does not care abou ehat is happening at the endpoint. The only thing that matters is that the server returns an HTML which our browser renders.
 
 Architectures :
 ## SOAP
