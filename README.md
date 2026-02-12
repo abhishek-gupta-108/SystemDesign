@@ -95,3 +95,7 @@ Back to the topics:
  ↣ Health checks and circuit breakers
  ↣ Logging and log aggregation
  ↣ Metrics, monitoring and alerting
+
+
+
+Apache kafka vs RabbitMq
