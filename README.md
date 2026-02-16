@@ -99,3 +99,9 @@ Back to the topics:
 
 
 Apache kafka vs RabbitMq
+
+
+
+## Case Studies:
+
+1. How OTTs like Hotstar, Netflix implement Live Steaming? _ Like Cricket match, Boxing Match?
