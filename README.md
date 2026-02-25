@@ -7,6 +7,7 @@
 ## DATABASES
 
 As an Engineer you should know the following concepts
+1. Indexation
 
 
 
