@@ -105,3 +105,6 @@ Apache kafka vs RabbitMq
 ## Case Studies:
 
 1. How OTTs like Hotstar, Netflix implement Live Steaming? _ Like Cricket match, Boxing Match?
+2. How infinite scroll works
+3. How Whatsapp Stores/created chat?
+4. Tinder - User DB Sharding by location
