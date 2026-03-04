@@ -8,8 +8,19 @@
 
 As an Engineer you should know the following concepts
 1. Indexation
+2. WAL
+3. CDC ( Change Description Capture)
+4. 
 
 
+## Message Queues
+1. Apache Kafka
+2. RabbitMQ
+
+## Architecture
+1. Event Driven Architecture
+2. CRQS
+3. Saga
 
 ## To Learn
 1. Idempotency → Prevents duplicate payments
