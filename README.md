@@ -10,7 +10,7 @@ As an Engineer you should know the following concepts
 1. Indexation
 2. WAL
 3. CDC ( Change Description Capture)
-4. 
+4. SQL vs NoSQL - 
 
 
 ## Message Queues
