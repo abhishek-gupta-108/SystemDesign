@@ -120,3 +120,6 @@ Apache kafka vs RabbitMq
 2. How infinite scroll works
 3. How Whatsapp Stores/created chat?
 4. Tinder - User DB Sharding by location
+
+## Bottlenecks
+
