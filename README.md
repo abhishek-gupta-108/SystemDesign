@@ -36,8 +36,44 @@ As an Engineer you should know the following concepts
 11. Observability → You can’t fix what you can’t see.
 12. Logs, metrics, traces save more production incidents than code.
 
+1. Load Balancing
+2. SQL vs NoSQL
+3. Idempotency
+4. Message Queues
+5. CAP Theorem
+6. APIs
+7. Batch vs Stream Processing
+8. Caching Strategies
+9. Webhooks
+10. Availability
+11. Data Sharding and Partitioning
+12. Bloom Filters
+13. Stateful vs Stateless Architecture
+14. Algorithms in Distributed Systems
+15. API Gateways
+16. Proxy vs Reverse Proxy
+17. Sharding
+18. Long Polling vs WebSockets
+19. Consistent Hashing
+20. gRPC, tRPC, GraphQL, or REST
+21. Caching
+22. Scaling
+23. Cache Eviction Policies
+24. Databases in System Design
+25. JWTs
+26. Services in System Design
+27. Concurrency vs Parallelism
+28. CDC
+29. ACID Transactions
+30. CDN
+31. Sync vs Async
+32. Rate Limiting Algorithms
+33. REST
+34. gRPC vs REST tradeoffs
+35. Fault Tolerance
 
-Back to the topics: 
+
+## Back to the topics: 
 1. Networking basics
  ↣ IP addressing
  ↣ Domain Name System (DNS)
