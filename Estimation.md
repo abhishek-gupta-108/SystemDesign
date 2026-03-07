@@ -79,3 +79,215 @@ Total:
 = 16GB**
 
 This fits in **Redis cluster.**
+
+# SIZE/SPEED Estimates
+
+### SATA SSD :
+A SATA SSD (Solid State Drive) is a type of storage drive that uses the common Serial ATA (SATA) interface, offering significant speed improvements over traditional hard drives (HDDs) by using flash memory instead of spinning platters, making computers boot faster and applications load quicker, though it's slower than newer NVMe SSDs.
+
+### An NVMe SSD:
+is a high-performance Solid-State Drive that uses the Non-Volatile Memory Express (NVMe) protocol, connecting directly to the CPU via the PCI Express (PCIe) bus for dramatically faster data transfer, lower latency, and higher input/output operations per second (IOPS) compared to older SATA-based SSDs. It's built specifically for flash memory, enabling lightning-fast speeds for gaming, large file transfers, and demanding applications like AI and video editing
+
+### Typical Disk Size per Server (Production Systems)
+
+Modern backend servers usually have NVMe SSDs.
+
+**Typical configurations:**
+
+| Storage Type          | Typical Size |
+| --------------------- | ------------ |
+| SATA SSD              | 1–4 TB       |
+| NVMe SSD              | 2–8 TB       |
+| High-end storage node | 8–16 TB      |
+| Cold storage node     | 20–100 TB    |
+
+
+**A common assumption in interviews: 1 machine ≈ 4–8 TB usable storage**
+
+But remember:
+**Replication reduces usable storage.**<br>
+
+```
+  Example:
+  8 TB disk
+  3× replication
+  usable ≈ 2.6 TB
+  
+```
+**Distributed DBs like Cassandra, DynamoDB, HBase replicate data.**
+
+
+### Typical Disk Speed
+
+For databases the important metric is IOPS and throughput.
+
+**HDD (old systems)**
+
+| Metric     | Value    |
+| ---------- | -------- |
+| IOPS       | 100–200  |
+| Throughput | 150 MB/s |
+
+Not used for high-traffic DBs anymore.
+
+**SATA SSD**
+| Metric     | Value    |
+| ---------- | -------- |
+| IOPS       | 50K–100K |
+| Throughput | 500 MB/s |
+
+
+**NVMe SSD (modern servers)**
+| Metric     | Value    |
+| ---------- | -------- |
+| IOPS       | 500K–1M  |
+| Throughput | 3–7 GB/s |
+
+**This is why modern distributed databases scale well.**
+
+
+
+
+### Typical Database Throughput
+
+Now let's talk about queries per second.<br>
+
+These are ballpark engineering numbers.
+
+**SQL Databases (MySQL / PostgreSQL)**
+
+Single node capacity roughly:
+
+| Operation | Typical QPS |
+| --------- | ----------- |
+| Reads     | 10K–50K/sec |
+| Writes    | 5K–20K/sec  |
+
+
+With tuning and replication:
+
+Reads can scale to 100K+/sec
+
+Why writes are slower:
+
+1. transactions
+2. locks
+3. indexes
+4. WAL logging
+
+**NoSQL Databases (Cassandra / DynamoDB / HBase)**
+
+These are optimized for horizontal scaling and high writes. Per node:
+
+| Operation | Typical QPS  |
+| --------- | ------------ |
+| Reads     | 50K–200K/sec |
+| Writes    | 20K–100K/sec |
+
+
+Key reasons:
+1. no joins
+2. append-heavy design
+3. LSM trees
+
+Example:
+
+**Cassandra clusters** can easily handle: **millions of writes/sec** with enough nodes.
+
+
+### Typical Redis Node Size
+
+Redis stores data in RAM, so size depends on memory.
+
+Common production nodes:
+| RAM        | Usage          |
+| ---------- | -------------- |
+| 16 GB      | small services |
+| 32 GB      | common         |
+| 64 GB      | large cache    |
+| 128–256 GB | heavy systems  |
+
+**Typical assumption: Redis node ≈ 64 GB RAM**
+
+Companies use Redis clusters.
+Example:
+
+10 nodes × 64 GB
+≈ 640 GB cache
+
+### Redis Throughput
+
+Redis is extremely fast.
+
+Single node:
+| Operation | Throughput |
+| --------- | ---------- |
+| Reads     | 1M+/sec    |
+| Writes    | 500K+/sec  |
+
+**Latency : ~0.1–1 ms**
+
+That's why Redis is used for:
+1. counters
+2. session storage
+3. hot data
+
+### Network Bandwidth (Often Forgotten)
+
+Typical server NICs:
+| Type             | Speed    |
+| ---------------- | -------- |
+| Standard         | 10 Gbps  |
+| High-performance | 25 Gbps  |
+| Very high-end    | 100 Gbps |
+
+10 Gbps means:
+
+≈ 1.25 GB/sec
+
+Network often becomes bottleneck before disk.
+
+## Practical Interview Numbers (Memorize These)
+
+If you're stuck in a system design interview, use these:
+```
+Single SQL node
+  reads ≈ 20K/sec
+  writes ≈ 10K/sec
+```
+```  
+NoSQL node
+  reads ≈ 100K/sec
+  writes ≈ 50K/sec
+```
+```
+Redis node
+  ops ≈ 1M/sec
+Server storage
+  ≈ 4–8 TB
+```
+```
+Redis memory
+  ≈ 64 GB
+```
+
+These are perfectly acceptable interview assumptions.
+
+
+#### The Key Insight Senior Engineers Use
+
+They never depend on one machine.
+
+Instead they think:
+
+capacity per node
+×
+number of nodes
+=
+system capacity
+
+Example:
+
+50K writes/sec per node
+20 nodes
+= 1M writes/sec capacity
