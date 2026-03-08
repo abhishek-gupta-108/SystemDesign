@@ -16,7 +16,10 @@ As an Engineer you should know the following concepts
 1. Indexation
 2. WAL
 3. CDC ( Change Description Capture)
-4. SQL vs NoSQL - 
+4. SQL vs NoSQL -
+
+## Case Studies
+1. [Fb Like](https://github.com/abhishek-gupta-108/SystemDesign/blob/main/Case%20Studies/Social%20Media%20Post.md)
 
 
 ## Message Queues
