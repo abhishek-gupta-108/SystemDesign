@@ -1,10 +1,15 @@
 # SystemDesign
 
 
+
 [API Architecture](https://github.com/abhishek-gupta-108/SystemDesign/blob/main/APIArchitecture.md)
 
+## General
+1. [Capacity Estimation]() 
 
 ## DATABASES
+
+1. [Why DB Partitioning](https://github.com/abhishek-gupta-108/SystemDesign/blob/main/Db_Partition.md)
 
 As an Engineer you should know the following concepts
 1. Indexation
