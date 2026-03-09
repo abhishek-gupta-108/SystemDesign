@@ -15,7 +15,7 @@
 ## DATABASES
 
 1. [Why DB Partitioning](https://github.com/abhishek-gupta-108/SystemDesign/blob/main/Db_Partition.md)
-2. [Write Ahead Logging]()
+2. [Write Ahead Logging](https://www.dropbox.com/scl/fi/yhzvs7dk3oxym3lnm8dtk/WriteAheadLogging.docx?cloud_editor=word&dl=0&rlkey=mz7ym3nxzha8vd8sxjzgll0fp)
 
 
 ## SQL
