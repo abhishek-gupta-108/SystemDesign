@@ -5,8 +5,8 @@
 [API Architecture](https://github.com/abhishek-gupta-108/SystemDesign/blob/main/APIArchitecture.md)
 
 ## General
-1. [Capacity Estimation]()
-2. [API Architecture](https://github.com/abhishek-gupta-108/SystemDesign/blob/main/APIArchitecture.md)
+1. [Capacity Estimation](https://github.com/abhishek-gupta-108/SystemDesign/blob/main/Estimation.md)
+2. [API Architecture - Rest, gRPC, Websockets, WebHooks](https://github.com/abhishek-gupta-108/SystemDesign/blob/main/APIArchitecture.md)
 3. API Gateway
 4. Proxy and Reverse Proxy
 5. Load Balancers
