@@ -7,6 +7,10 @@
 ## General
 1. [Capacity Estimation]()
 2. [API Architecture](https://github.com/abhishek-gupta-108/SystemDesign/blob/main/APIArchitecture.md)
+3. API Gateway
+4. Proxy and Reverse Proxy
+5. Load Balancers
+6. 
 
 ## DATABASES
 
