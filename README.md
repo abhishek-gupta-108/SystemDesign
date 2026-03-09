@@ -12,6 +12,14 @@
 
 1. [Why DB Partitioning](https://github.com/abhishek-gupta-108/SystemDesign/blob/main/Db_Partition.md)
 
+
+## SQL
+1. Transactions
+2. ACID property
+3. Indexing
+4. Normalization
+5. Denormalization
+
 As an Engineer you should know the following concepts
 1. Indexation
 2. WAL
@@ -25,6 +33,7 @@ As an Engineer you should know the following concepts
 ## Message Queues
 1. Apache Kafka
 2. RabbitMQ
+3. ActiveMQ
 
 ## Architecture
 1. Event Driven Architecture
