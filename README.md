@@ -15,6 +15,7 @@
 ## DATABASES
 
 1. [Why DB Partitioning](https://github.com/abhishek-gupta-108/SystemDesign/blob/main/Db_Partition.md)
+2. [Write Ahead Logging]()
 
 
 ## SQL
