@@ -8,7 +8,7 @@
 1. [Capacity Estimation](https://github.com/abhishek-gupta-108/SystemDesign/blob/main/Estimation.md)
 2. [API Architecture - Rest, gRPC, Websockets, WebHooks](https://github.com/abhishek-gupta-108/SystemDesign/blob/main/APIArchitecture.md)
 3. API Gateway
-4. Proxy and Reverse Proxy
+4. [Proxy and Reverse Proxy](https://www.dropbox.com/home/My%20Preparation/System_Design?preview=Proxy_Servers.docx)
 5. Load Balancers
 6. 
 
