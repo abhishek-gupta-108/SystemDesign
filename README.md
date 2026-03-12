@@ -1,15 +1,14 @@
 # SystemDesign
 
-
-
-[API Architecture](https://github.com/abhishek-gupta-108/SystemDesign/blob/main/APIArchitecture.md)
-
 ## General
 1. [Capacity Estimation](https://github.com/abhishek-gupta-108/SystemDesign/blob/main/Estimation.md)
 2. [API Architecture - Rest, gRPC, Websockets, WebHooks](https://github.com/abhishek-gupta-108/SystemDesign/blob/main/APIArchitecture.md)
 3. API Gateway
 4. 
 5. Load Balancers
+
+## Networking Basics
+1. [IP| TCP | UDP](https://github.com/abhishek-gupta-108/SystemDesign/blob/main/IP_TCP_UDP.md)
 
 
 ## Servers
@@ -41,6 +40,7 @@ As an Engineer you should know the following concepts
 
 ## Case Studies
 1. [Fb Like](https://github.com/abhishek-gupta-108/SystemDesign/blob/main/Case%20Studies/Social%20Media%20Post.md)
+2. [How Uber Serves over 150 Million Reads per Second from Integrated Cache](https://blog.bytebytego.com/p/how-uber-serves-over-150-million?utm_source=post-email-title&publication_id=817132&post_id=183290309&utm_campaign=email-post-title&isFreemail=true&r=1k4o5w&triedRedirect=true&utm_medium=email)
 
 
 ## Message Queues
@@ -52,6 +52,12 @@ As an Engineer you should know the following concepts
 1. Event Driven Architecture
 2. CRQS
 3. Saga
+
+
+## Authentication
+1. JWT security
+2. OAuth
+3. Access Token/Refresh Token
 
 ## To Learn
 1. Idempotency → Prevents duplicate payments
