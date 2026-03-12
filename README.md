@@ -37,7 +37,7 @@ As an Engineer you should know the following concepts
 4. SQL vs NoSQL -
 
 ## Misclaneous
-1. [Back-Pressure)(https://github.com/abhishek-gupta-108/SystemDesign/blob/main/Back-Pressure.md)
+1. [Back-Pressure](https://github.com/abhishek-gupta-108/SystemDesign/blob/main/Back-Pressure.md)
 
 ## Case Studies
 1. [Fb Like](https://github.com/abhishek-gupta-108/SystemDesign/blob/main/Case%20Studies/Social%20Media%20Post.md)
