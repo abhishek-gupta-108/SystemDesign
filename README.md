@@ -8,9 +8,14 @@
 1. [Capacity Estimation](https://github.com/abhishek-gupta-108/SystemDesign/blob/main/Estimation.md)
 2. [API Architecture - Rest, gRPC, Websockets, WebHooks](https://github.com/abhishek-gupta-108/SystemDesign/blob/main/APIArchitecture.md)
 3. API Gateway
-4. [Proxy and Reverse Proxy](https://www.dropbox.com/home/My%20Preparation/System_Design?preview=Proxy_Servers.docx)
+4. 
 5. Load Balancers
-6. 
+
+
+## Servers
+1. Load Balancers
+2. [Proxy and Reverse Proxy](https://www.dropbox.com/home/My%20Preparation/System_Design?preview=Proxy_Servers.docx)
+3. Nginx
 
 ## DATABASES
 
@@ -30,6 +35,9 @@ As an Engineer you should know the following concepts
 2. WAL
 3. CDC ( Change Description Capture)
 4. SQL vs NoSQL -
+
+## Misclaneous
+1. [Back-Pressure)(https://github.com/abhishek-gupta-108/SystemDesign/blob/main/Back-Pressure.md)
 
 ## Case Studies
 1. [Fb Like](https://github.com/abhishek-gupta-108/SystemDesign/blob/main/Case%20Studies/Social%20Media%20Post.md)
