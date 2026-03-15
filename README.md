@@ -45,8 +45,9 @@ As an Engineer you should know the following concepts
 
 ## Message Queues
 1. Apache Kafka
-2. RabbitMQ
-3. ActiveMQ
+2. Flink - [Apache kafka vs Flink](https://www.redpanda.com/guides/event-stream-processing-flink-vs-kafka)
+3. RabbitMQ
+4. ActiveMQ
 
 ## Architecture
 1. Event Driven Architecture
